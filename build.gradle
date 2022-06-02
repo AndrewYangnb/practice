@@ -11,13 +11,41 @@ repositories {
 
 
 dependencies {
+    // Google Guava
     compile 'com.google.guava:guava:30.1.1-jre'
+
+    // lang3
     compile 'org.apache.commons:commons-lang3:3.12.0'
-//    compile 'commons-collections:commons-collections:3.2.2'
+
+    // ormlite-core
     compile 'com.j256.ormlite:ormlite-core:4.48'
+    compile 'com.j256.ormlite:ormlite-jdbc:4.48'
+
+    // Typesafe Config
+    compile 'com.typesafe:config:1.4.2'
+
+    // redisson
     compile 'org.redisson:redisson:3.17.1'
+
+    // spark
     compile 'com.sparkjava:spark-core:2.9.3'
+
+    // slf4j
+//    compile 'org.slf4j:slf4j-jdk14:1.7.25'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
+
+    // log4j
+    compile 'org.apache.logging.log4j:log4j-api:2.10.0'
+    compile 'org.apache.logging.log4j:log4j-core:2.10.0'
+
+    // Gson
+    compile 'com.google.code.gson:gson:2.8.6'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+
+    // MySQL
+    runtime 'mysql:mysql-connector-java:5.1.37'
+
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 }
 
