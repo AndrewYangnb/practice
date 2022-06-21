@@ -25,20 +25,20 @@ public class WebAPIServer {
 
     public void buildRoutes() {
 
-//每次get/post操作前更新logger
+        //每次get/post操作前更新logger
         before("/*", (q, a) -> logger.info("Received api call"));
 
-//http://127.0.0.1:10000/hello，路由为“hello” 时返回HelloWorld
+        // http://127.0.0.1:10000/hello，路由为“hello” 时返回HelloWorld
         get("/hello", (q,a) -> "Hello World");
 
-//http://127.0.0.1:10000/:id?query=111
+        // http://127.0.0.1:10000/:id?query=111
         get("/user/:id", (q, a) -> {
 
             String id = q.params("id");
             String query = q.queryParams("query");
 
             a.type("application/json");
-//将结果转换为Json格式输出
+            // 将结果转换为Json格式输出
             return gson.toJson(ImmutableMap.of("id", id, "query", query));
 
         });

@@ -6,12 +6,12 @@ import com.j256.ormlite.jdbc.JdbcConnectionSource;
 import com.j256.ormlite.support.ConnectionSource;
 
 
-
+import javax.swing.*;
 import java.util.List;
 
 public class PersonApp {
     private static final String databaseUrl = "jdbc:mysql://localhost/test?user=root&password=123456";
-    private Dao<Person, String> personDao;
+    private Dao<Person, Integer> personDao;
 
 
     public static void main(String[] args) throws Exception {
