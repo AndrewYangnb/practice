@@ -17,6 +17,8 @@ public class ThreadPoolExample {
 
     // 创建一个ThreadPoolExecutor接口的 固定线程数量的线程池，线程数量为2
 //    static ThreadPoolExecutor threadPool = (ThreadPoolExecutor) Executors.newFixedThreadPool(2);
+//    ExecutorService executor = Executors.newSingleThreadExecutor();
+//    ExecutorService executor = Executors.newCachedThreadPool();
 
     private static BlockingQueue<Runnable> LinkedBlockingQueue = new LinkedBlockingQueue<>(6);
     static ThreadPoolExecutor threadPool = new ThreadPoolExecutor(2, 5, 2, TimeUnit.SECONDS, LinkedBlockingQueue, new ThreadPoolExecutor.DiscardOldestPolicy());
