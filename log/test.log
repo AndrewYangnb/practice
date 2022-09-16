@@ -1,0 +1,11 @@
+2022-06-17 10:17:33.107 INFO  [main] [Chat:31] main - webSocketHandler is staring
+2022-06-17 10:17:33.133 INFO  [main] [Chat:37] main - webSocketHandler is working 
+2022-06-17 10:17:34.710 INFO  [qtp577880687-19] [Chat:46] broadcastMessage - Method broadcastMessage is deployed
+2022-06-17 10:17:34.712 INFO  [qtp577880687-19] [Chat:47] broadcastMessage - Server
+2022-06-17 10:17:34.715 INFO  [qtp577880687-19] [Chat:48] broadcastMessage - [User1]
+2022-06-17 10:17:34.726 INFO  [qtp577880687-19] [Chat:74] createHtmlMessageFromSender - Method createHtmlMessageFromSender is deployed
+2022-06-17 10:17:38.506 INFO  [qtp577880687-22] [Chat:46] broadcastMessage - Method broadcastMessage is deployed
+2022-06-17 10:17:38.507 INFO  [qtp577880687-22] [Chat:47] broadcastMessage - Server
+2022-06-17 10:17:38.508 INFO  [qtp577880687-22] [Chat:48] broadcastMessage - [User1, User2]
+2022-06-17 10:17:38.508 INFO  [qtp577880687-22] [Chat:74] createHtmlMessageFromSender - Method createHtmlMessageFromSender is deployed
+2022-06-17 10:17:38.510 INFO  [qtp577880687-22] [Chat:74] createHtmlMessageFromSender - Method createHtmlMessageFromSender is deployed

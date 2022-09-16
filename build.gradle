@@ -60,6 +60,12 @@ dependencies {
     // json
     compile 'org.json:json:20160810'
 
+    // AspectJ
+    compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.9.1'
+
+    //
+    implementation 'org.springframework:spring-context:4.0.6.RELEASE'
+
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
